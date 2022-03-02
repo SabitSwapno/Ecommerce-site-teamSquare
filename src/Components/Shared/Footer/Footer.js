@@ -12,9 +12,9 @@ const Footer = () => {
                     <h6>Making the world a better place through producing elegant consequence.</h6>
                 </div>
                 <div className='col-md-4 col-sm-12'>
-                    <h5>SPECIAL SERVICES</h5>
+                    <h5>Products Features</h5>
                     <h6>Create a strong and lasting first impression on our potential clients.</h6>
-                    <button className="btn btn-outline-light">Make an Appointment</button>
+                    <button className="btn btn-outline-light">Expolore Products</button>
                 </div>
                 <div className='col-md-4 col-sm-12'>
                     <h5>VISIT OUR OFFICE</h5>
