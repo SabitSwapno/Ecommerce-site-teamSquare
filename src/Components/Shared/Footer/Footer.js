@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <>
-            <div className='row footersBG'>
+            <div className='row footersBG mx-auto'>
                 <div className='col-md-4 col-sm-12'>
                     <h2>Intense<span style={{
                         color: "#fd7e14"

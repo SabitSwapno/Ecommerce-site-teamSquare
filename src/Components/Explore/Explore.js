@@ -1,18 +1,17 @@
 import React from 'react';
-import Review from '../Review/Review';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
-import Faq from './FAQ/Faq';
 
-const Home = () => {
+const Explore = () => {
     return (
         <>
             <Header></Header>
-            <Review></Review>
-            <Faq></Faq>
+            <div>
+                this is the explore page.
+            </div>
             <Footer></Footer>
         </>
     );
 };
 
-export default Home;
+export default Explore;

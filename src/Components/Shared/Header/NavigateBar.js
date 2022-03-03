@@ -9,16 +9,16 @@ const NavigateBar = () => {
                 <Container>
                     <Navbar.Brand style={{
                         color: "#fff"
-                    }} href="#home">Intense<span style={{
+                    }} href="/">Intense<span style={{
                         color: "#fd7e14"
                     }} >Mart</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-between'>
                         <Nav className="me-auto">
-                            <Nav.Link className='text-light' href="#home">Home</Nav.Link>
-                            <Nav.Link className='text-light' href="#link">Explore</Nav.Link>
-                            <Nav.Link className='text-light' href="#link">Link</Nav.Link>
-                            <Nav.Link className='text-light' href="#link">About Us</Nav.Link>
+                            <Nav.Link className='text-light' href="/home">Home</Nav.Link>
+                            <Nav.Link className='text-light' href="/explore">Explore</Nav.Link>
+                            <Nav.Link className='text-light' href="/aboutus">About Us</Nav.Link>
+                            <Nav.Link className='text-light' href="/login">Login</Nav.Link>
                         </Nav>
                         <Navbar.Text className='text-light'>
                             Signed in as: <a className='text-light' href="#login">Mark Otto</a>
