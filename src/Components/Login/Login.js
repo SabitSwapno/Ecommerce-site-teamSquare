@@ -4,6 +4,8 @@ import Header from '../Shared/Header/Header';
 import loginIMG from '../../images/log in.jpg';
 import './Login.css'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
 const Login = () => {
     return (
@@ -32,7 +34,7 @@ const Login = () => {
                             <br />
                             <div className="d-flex justify-content-center mx-2">
                                 <button className="CusButton my-3" type="submit">Login Now</button>
-                                <button className="CusButton my-3 mx-2">Google Log In</button>
+                                <button className="CusButton my-3 mx-2"><FontAwesomeIcon icon={faMailBulk} /> Google Log In</button>
                             </div>
                             <p style={{
                                 fontWeight: "500"

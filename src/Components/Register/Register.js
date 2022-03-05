@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 import loginIMG from '../../images/log in.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
 const Register = () => {
     return (
@@ -34,7 +36,7 @@ const Register = () => {
                             <br />
                             <div className="d-flex justify-content-center mx-2">
                                 <button className="CusButton my-3" type="submit">Register Now</button>
-                                <button className="CusButton my-3 mx-2">Google Log In</button>
+                                <button className="CusButton my-3 mx-2"><FontAwesomeIcon icon={faMailBulk} /> Google Log In</button>
                             </div>
                             <p style={{
                                 fontWeight: "500"

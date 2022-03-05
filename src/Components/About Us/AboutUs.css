@@ -5,3 +5,7 @@
 .borderCus {
     border-right: 1px dashed grey;
 }
+.smallDivBG{
+    background-color: rgb(235, 233, 233);
+    border-radius: 5px;
+}
