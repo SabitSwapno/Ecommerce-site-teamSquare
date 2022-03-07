@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Allen Jordan",
+        "feedback": "Often shops form this website",
+        "stars": "5",
+        "img": "https://i.ibb.co/mFTc002/bohemian-man-with-his-arms-crossed-1.jpg"
+    },
+    {
+        "name": "Bill Gates",
+        "feedback": "Low cost marketing place that's cool.",
+        "stars": "4",
+        "img": "https://yt3.ggpht.com/KyXAUjlAH_yiPIv9g8H_0dpP1_iRIqFiKudBzLHhyBhKQ65OgqHJQPz5MB9Dy-Gm0MOUlHcxjg=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+        "name": "Anilla Rose",
+        "feedback": "Women's collections are well enough.",
+        "stars": "4",
+        "img": "https://i.ibb.co/qpwFMxL/girl-1.jpg"
+    },
+    {
+        "name": "Md Garep Saxena",
+        "feedback": "It helped me a lot in the lockdowns.",
+        "stars": "5",
+        "img": "https://i.ibb.co/HdMxs34/garep-1.jpg"
+    },
+    {
+        "name": "Joiee Vasting",
+        "feedback": "I want some products but don't want to invest that money.",
+        "stars": "2",
+        "img": "https://i.ibb.co/wytSTKy/Joiee.jpg"
+    }
+]

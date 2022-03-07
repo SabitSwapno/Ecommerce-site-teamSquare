@@ -1,0 +1,27 @@
+.linkstyles {
+    text-decoration: none;
+    background-color: #212529;
+    color: #f8f9fa;
+    padding: 7px 15px;
+    border-radius: 3px;
+}
+.linkstyles:hover{
+    background-color: rgb(253, 126, 20);
+    color: whitesmoke;
+}
+.cusProductCard {
+    box-shadow: 1px 1px 10px 1px rgb(216, 216, 216);
+    border: 1px solid rgb(224, 224, 224);
+}
+.cusProductCard:hover {
+    border: 1px solid #212529;
+}
+.ImageCard {
+    transition: .5s;
+    overflow: hidden;
+}
+.ImageCard:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease-in-out;
+    
+}

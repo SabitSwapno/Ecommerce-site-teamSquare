@@ -22,3 +22,7 @@
     border-radius: 3px;
     text-decoration: none;
 }
+.CusButton:hover {
+    background-color: #212529;
+    color: #f8f9fa;
+}
