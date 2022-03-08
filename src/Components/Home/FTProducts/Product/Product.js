@@ -16,8 +16,8 @@ const Product = (props) => {
                             <h5 className="card-title">{title}</h5>
                             <p className="card-text">{category}</p>
                             <h5 className="card-text">$ {price}</h5>
-                            <div className="d-flex justify-content-center  align-items-center">
-                                <Link className='linkstyles' to="">View Details</Link>
+                            <div className="d-flex justify-content-center  ">
+                                <Link to={`/details/${id}`} className='linkstyles'>View Details</Link>
                                 <button className='CusButton mx-2'>Add to Cart</button>
                             </div>
                         </div>

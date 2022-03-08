@@ -1,8 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import useAuth from '../../../Hooks/useAuth';
 import './NavigateBar.css'
 
 const NavigateBar = () => {
+    const { user, logout } = useAuth();
     return (
         <div>
             <Navbar expand="lg" className='navigations'>
@@ -15,13 +20,18 @@ const NavigateBar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-between'>
                         <Nav className="me-auto">
-                            <Nav.Link className='text-light' href="/home">Home</Nav.Link>
-                            <Nav.Link className='text-light' href="/exploreshop">Shop</Nav.Link>
-                            <Nav.Link className='text-light' href="/aboutus">About Us</Nav.Link>
-                            <Nav.Link className='text-light' href="/login">Login</Nav.Link>
+                            <Nav.Link as={Link} className='text-light' to="/home">Home</Nav.Link>
+                            <Nav.Link as={Link} className='text-light' to="/exploreshop">Shop</Nav.Link>
+                            <Nav.Link as={Link} className='text-light' to="/aboutus">About Us</Nav.Link>
+                            {
+                                user?.email ?
+                                    <button className='logoutbutton text-light' onClick={logout} title="Log Out"><FontAwesomeIcon icon={faArrowRightFromBracket} /></button>
+                                    :
+                                    <Nav.Link as={Link} className='text-light' to="/login">Login</Nav.Link>
+                            }
                         </Nav>
                         <Navbar.Text className='text-light'>
-                            Signed in as: <a className='text-light' href="#login">Mark Otto</a>
+                            Signed in as: <a className='text-light' href="#login">{user?.displayName}</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>

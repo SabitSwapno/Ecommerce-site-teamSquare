@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Product from './Product/Product';
 
 const FTProducts = () => {
@@ -27,6 +28,14 @@ const FTProducts = () => {
                     ></Product>)
                 }
             </div>
+            <h3>
+                <Link style={{
+                    color: "#212529",
+                    fontWeight: 700,
+                    paddingTop: "2%",
+                    textDecoration: "none"
+                }} to="/exploreshop">-- Click here to find more products by going to Shop page --</Link>
+            </h3>
         </div>
     );
 };
