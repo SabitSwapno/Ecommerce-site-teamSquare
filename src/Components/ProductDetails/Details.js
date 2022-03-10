@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 
@@ -9,11 +7,12 @@ const Details = () => {
 
     const { productId } = useParams()
     const [product, setProduct] = useState()
+
     useEffect(() => {
-        fetch('/products.JSON')
+        fetch(`https://damp-river-81870.herokuapp.com/all-products/${productId}`)
             .then(res => res.json())
-            .then(data => setProduct(data.find(data => +productId === data.id)))
-    }, [productId])
+            .then(data => setProduct(data))
+    }, [])
 
     return (
         <>
@@ -32,10 +31,8 @@ const Details = () => {
                                 <p className="card-text"><small className="text-muted">{product?.category}</small></p>
                                 <h6 className="card-text">{product?.description}</h6>
                                 <h4 className="card-title">$ {product?.price}</h4>
-                                <h6 className="card-text">Rated {product?.rating?.rate} out of 5</h6>
                                 <div className='pt-4'>
-                                    <Link to={`/exploreshop`} className='linkstyles'>Back To Shop</Link>
-                                    <button className='CusButton mx-2'><FontAwesomeIcon icon={faCartShopping} /> Add to Cart</button>
+                                    <Link to={`/exploreshop`} className='CusButton'>Back To Shop</Link>
                                 </div>
                             </div>
                         </div>

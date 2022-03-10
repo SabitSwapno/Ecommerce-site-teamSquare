@@ -1,0 +1,21 @@
+.cusdasboardlink {
+    color: #212529;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+.cusdasboardlink1 {
+    color: #212529;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+}
+.cusdasboardlink1:hover {
+    background-color: #212529;
+    color: rgb(253, 126, 20);
+}
+.cusdasboardlink:hover {
+    background-color: #212529;
+    color: rgb(253, 126, 20);
+}

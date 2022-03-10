@@ -7,7 +7,7 @@ const Review = () => {
 
   const [review, setReview] = useState([])
   useEffect(() => {
-    fetch('ReviewsData.Json')
+    fetch('https://damp-river-81870.herokuapp.com/customer-reviews')
       .then(res => res.json())
       .then(data => setReview(data))
   }, [])
@@ -53,11 +53,13 @@ const Review = () => {
         color: "#212529",
         fontWeight: 700,
         paddingBottom: "1%"
-      }}>Customers Reviews</h2>
+      }}>Customers <span style={{
+        color: "#fd7e14"
+      }}>Reviews</span></h2>
       <Slider {...settings}>
         {
           review.map(review => <SReview
-            key={review.name}
+            key={review._id}
             review={review}
           ></SReview>)
         }

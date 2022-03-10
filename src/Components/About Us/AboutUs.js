@@ -23,7 +23,9 @@ const AboutUs = () => {
                     color: "#212529",
                     fontWeight: 700,
                     paddingTop: "2%",
-                }}>About Us</h2>
+                }}>About <span style={{
+                    color: "#fd7e14"
+                }}>Us</span></h2>
                 <div className="row p-3 g-3 d-flex justify-content-center align-items-center">
                     <div className='col-md-6 col-sm-12'>
                         <div className="row d-flex p-3 mb-2 justify-content-center align-items-center smallDivBG">
@@ -104,7 +106,9 @@ const AboutUs = () => {
                 <h2 style={{
                     color: "#212529",
                     fontWeight: 700,
-                }}>About Team Square</h2>
+                }}>About <span style={{
+                    color: "#fd7e14"
+                }}>Team Square</span></h2>
                 <div className="row py-4">
                     <div className="col-md-6 col-sm-12 borderCus">
                         <img style={{
@@ -113,7 +117,7 @@ const AboutUs = () => {
                             borderRadius: "3px"
                         }} src={sajibPic} alt="" />
                         <h4 className='fw-bolder'>Md Rafiuzzaman Sajib</h4>
-                        <h6 className='pb-2 fw-bold'>Project's Manager & Backend Development</h6>
+                        <h6 className='pb-2 fw-bold'>Project's Manager, Backend & API Development</h6>
                         <a className='CusButton' target="_blank" href="https://goofy-lumiere-d21ea0.netlify.app/">View Portfolio</a>
                     </div>
                     <div className="col-md-6 col-sm-12">

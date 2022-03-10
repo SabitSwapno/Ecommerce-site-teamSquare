@@ -3,27 +3,30 @@ import { Link } from 'react-router-dom';
 import Product from './Product/Product';
 
 const FTProducts = () => {
-    const [product, setProduct] = useState([])
+    const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('products.JSON')
+        fetch('https://damp-river-81870.herokuapp.com/all-products')
             .then(res => res.json())
-            .then(data => setProduct(data))
+            .then(data => setProducts(data))
     }, [])
+
     return (
         <div className='container'>
             <h2 style={{
                 color: "#212529",
                 fontWeight: 700,
                 paddingTop: "2%",
-            }}>Some Featured Products</h2>
+            }}>Some Featured <span style={{
+                color: "#fd7e14"
+            }}>Products</span></h2>
             <h5 style={{
                 color: "#212529",
                 paddingBottom: "1%",
             }}>Some of Our Products for The display</h5>
             <div className='row g-2'>
                 {
-                    product.slice(0, 6).map(product => <Product
-                        key={product.id}
+                    products.slice(0, 6).map(product => <Product
+                        key={product._id}
                         product={product}
                     ></Product>)
                 }

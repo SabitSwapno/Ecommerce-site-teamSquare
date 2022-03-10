@@ -7,7 +7,9 @@ const Faq = () => {
             <h2 style={{
                 color: "#212529",
                 fontWeight: 700,
-            }}>Frequiently Asked Questions</h2>
+            }}>Frequiently Asked <span style={{
+                color: "#fd7e14"
+            }}>Questions</span></h2>
             <h4 style={{
                 color: "#212529"
             }}>We almost try to answer our every customers questions.</h4>

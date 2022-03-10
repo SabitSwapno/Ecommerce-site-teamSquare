@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Product.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-const Product = (props) => {
+const AllProducts = (props) => {
     const { _id, title, price, image, category } = props.product;
+
     return (
         <div className="col-md-6 col-sm-12">
             <div className="card cusProductCard mb-3" style={{ maxwidth: "540px" }}>
@@ -16,7 +18,10 @@ const Product = (props) => {
                             <h5 className="card-title">{title}</h5>
                             <p className="card-text">{category}</p>
                             <h5 className="card-text">$ {price}</h5>
-                            <Link to={`/details/${_id}`} className='CusButton'>View Details</Link>
+                            <Link to={`/details/${_id}`} className='linkstyles'>View Details</Link>
+
+                            <button onClick={() => props.handleAddToCart(props.product)} className='CusButton  mt-2 mx-2'><FontAwesomeIcon icon={faShoppingCart} /> Add to Cart</button>
+
                         </div>
                     </div>
                 </div>
@@ -25,4 +30,4 @@ const Product = (props) => {
     );
 };
 
-export default Product;
+export default AllProducts;
